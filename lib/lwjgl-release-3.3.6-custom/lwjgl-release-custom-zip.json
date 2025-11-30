@@ -1,0 +1,29 @@
+{
+  "build": "release",
+  "mode": "zip",
+  "selectedAddons": [
+    "joml",
+    "joml-primitives"
+  ],
+  "platform": [
+    "windows"
+  ],
+  "descriptions": false,
+  "compact": false,
+  "hardcoded": false,
+  "javadoc": true,
+  "includeJSON": true,
+  "source": true,
+  "osgi": false,
+  "language": "groovy",
+  "contents": [
+    "lwjgl",
+    "lwjgl-glfw",
+    "lwjgl-opengl",
+    "lwjgl-stb",
+    "lwjgl-yoga",
+    "lwjgl-zstd"
+  ],
+  "version": "3.3.6",
+  "versionLatest": "3.3.6"
+}
