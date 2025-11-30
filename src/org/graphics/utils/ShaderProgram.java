@@ -73,5 +73,24 @@ public class ShaderProgram {
         }
     }
 
+    public void setUniform(String name, float[] value) {
+        int location = glGetUniformLocation(programID, name);
+
+        if (location != -1) {
+            if (value.length == 1) {
+                glUniform1f(location, value[0]);
+            } else if (value.length == 2) {
+                glUniform2fv(location, value);
+            } else if (value.length == 3) {
+                glUniform3fv(location, value);
+            } else if (value.length == 4) {
+                glUniform4fv(location, value);
+            } else {
+                throw new IllegalArgumentException("Unsupported uniform array length: " + value.length);
+            }
+        }
+    }
+
+
 
 }
